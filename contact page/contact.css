@@ -1,0 +1,110 @@
+
+:root{
+  --green:#2e3f32;          
+  --paper:#fff;            
+  --ink:#0d0d0d;           
+  --muted:#666;            
+  --input:#d9d9d9;         
+  --blue:#57835b;           
+  --container:1100px;       
+  --radius:12px;
+}
+
+*{ box-sizing:border-box }
+html,body{ height:100% }
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family: ui-monospace, Menlo, Consolas, "Courier New", monospace;
+  line-height:1.45;
+}
+
+/* containers */
+.container{ max-width:var(--container); margin:0 auto; padding:0 18px }
+
+/* navbar */
+.topbar{ background:var(--green) }
+.nav{
+  display:flex; justify-content:space-around; align-items:center;
+  padding:8px 0;
+}
+.nav a{
+  color:#fff; text-decoration:underline; text-underline-offset:6px;
+}
+.nav a.active{ text-decoration-thickness:3px }
+
+/* title */
+.page-title h1{
+  text-align:center;
+  margin:24px 0 6px;
+  font-weight:700; letter-spacing:.06em;
+  font-size:clamp(28px,5vw,44px);
+}
+
+/* form */
+#contact-form{
+  max-width: 840px;
+  margin: 12px auto 28px;
+  display:grid; gap: 26px;
+}
+
+.field{ display:grid; gap:10px }
+label{
+  font-size: clamp(22px, 3.6vw, 38px); 
+  font-weight: 600;
+}
+
+input, textarea{
+  width:100%;
+  background: var(--input);
+  border:2px solid #222;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  font: inherit;
+  color: #111;
+}
+textarea{ resize: vertical; min-height: 220px } 
+
+input:focus, textarea:focus{
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+/* submit */
+.actions{ display:grid; place-items:center; gap:10px; margin-top: 6px }
+.btn-primary{
+  background: var(--blue);
+  color: #fff;
+  padding: 14px 36px;
+  border: 0;
+  border-radius: 18px;      
+  cursor: pointer;
+  font-size: clamp(18px, 3.2vw, 28px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+}
+.btn-primary:hover{ filter: brightness(1.04) }
+
+/* messages */
+.error{
+  margin: 4px 2px 0;
+  color: #b00020;
+  font-size: 12px;
+  min-height: 1em; 
+}
+.success{
+  margin: 4px 0 0;
+  color: #0a6a21;
+  font-size: 14px;
+  min-height: 1.2em;
+}
+
+/* footer */
+.bottombar{
+  background:var(--green);
+  color:#e9e9e9;
+  display:flex; justify-content:center;
+  padding:10px 12px; 
+  margin-top: 24px;
+}
+.bottombar p{ margin:0; font-size:12px }

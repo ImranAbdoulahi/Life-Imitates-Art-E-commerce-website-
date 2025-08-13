@@ -1,0 +1,147 @@
+
+:root{
+  --green: #2e3f32;      
+  --ink: #0d0d0d;
+  --paper: #ffffff;
+  --card: #0b0b0b;      
+  --container: 1200px;
+  --radius: 16px;
+}
+
+/* base */
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+}
+
+body{
+    margin:0;
+    background:var(--paper);color:var(--ink);
+    font-family:ui-monospace, Menlo, Consolas, monospace;
+}
+
+/* layout helpers */
+.container{
+    max-width:var(--container);
+    margin:0 auto;
+    padding:0 18px;
+}
+
+/* navbar */
+.topbar{
+    background:var(--green);
+}
+.nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:8px 0;
+}
+
+.nav-link{
+    color:#fff;
+    text-decoration:underline;
+    text-underline-offset:6px;
+}
+
+/* hero */
+.hero{
+    position:relative;min-height:46vh;display:grid;place-items:center
+}
+
+.hero img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(.90);
+}
+.hero h1{
+    position:relative;
+    margin:0;
+    color:#fff;
+    font-weight:700;
+    letter-spacing:.08em;
+    font-size:clamp(32px,7vw,72px);
+    text-shadow:0 2px 18px rgba(0,0,0,.35);
+    text-align:center;
+}
+.space{
+    height:1000px;
+    width: 100%;
+}
+/* section heading */
+.section-title{
+    font-size:clamp(20px,3vw,28px);
+    font-weight:500;
+    margin:18px 0;
+}
+
+/* cards */
+.cards{display:grid;
+    gap:26px;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+}
+
+.card{
+    background:var(--card);
+    border-radius:var(--radius);
+    color:#f0f0f0;
+    padding:14px;
+    box-shadow:0 10px 24px rgba(0,0,0,.22);
+    transition:transform .15s ease, box-shadow .2s ease;
+}
+
+.card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 16px 30px rgba(0,0,0,.28);
+}
+
+.card-title{
+    font-size:14px;
+    line-height:1.25;
+    margin:0 0 10px 0;
+    text-align:center;
+}
+
+.thumb{
+    background:#1a1a1a;
+    border-radius:12px
+    ;overflow:hidden;
+    height:170px;
+    margin:0 auto 10px;
+}
+
+.thumb img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.meta{
+    display:grid;gap:2px;
+    place-items:center;
+    font-size:12px;
+    opacity:.9;
+}
+
+/* footer */
+.bottombar{
+    background:var(--green);
+    color:#e9e9e9;
+    display:flex;
+    justify-content:center;
+    padding:10px 12px;
+    margin-top:26px;
+    
+}
+
+.bottombar p{
+    margin:0;
+    font-size:12px;
+}

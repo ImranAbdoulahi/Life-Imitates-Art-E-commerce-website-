@@ -1,0 +1,110 @@
+[
+  {
+    "id": "p01",
+    "name": "picture gallery w/ views of modern rome",
+    "artist": "Giovanni Paolo Pannini",
+    "year": 1757,
+    "size": "48”×72”",
+    "price": 11103,
+    "image": "../p5.png"
+  },
+  {
+    "id": "p02",
+    "name": "paris street, rainy day",
+    "artist": "Gustave Caillebotte",
+    "year": 1877,
+    "size": "88”×104”",
+    "price": 70,
+    "image": "../p6.jpg"
+  },
+  {
+    "id": "p03",
+    "name": "Nadine",
+    "artist": "Francesco Calistri",
+    "year": 2023,
+    "size": "20”×20”",
+    "price": 2516,
+    "image": "../p7.png"
+  },
+  {
+    "id": "p04",
+    "name": "unpleasant surprise",
+    "artist": "Cornelius Mahu",
+    "year": 1610,
+    "size": "67”×39”",
+    "price": 211,
+    "image": "../p8.png"
+  },
+  {
+    "id": "p05",
+    "name": "aosta",
+    "artist": "Teatro Romano",
+    "year": 2023,
+    "size": "20”×28”",
+    "price": 1070,
+    "image": "../p9.png"
+  },
+  {
+    "id": "p06",
+    "name": "transcendental infinite unity",
+    "artist": "Deborah Bourgault",
+    "year": 2024,
+    "size": "30”×40”",
+    "price": 1360,
+    "image": "../p10.png"
+  },
+  {
+    "id": "p07",
+    "name": "la fille du pêcheur (the fisherman's daughter)",
+    "artist": "William-Adolphe Bouguereau",
+    "year": 1882,
+    "size": "67”×39”",
+    "price": 1985000,
+    "image": "../p11.png"
+  },
+  {
+    "id": "p08",
+    "name": "the lady of shalott",
+    "artist": "John William Waterhouse",
+    "year": 1888,
+    "size": "72”×91”",
+    "price": 296,
+    "image": "../p12.png"
+  },
+  {
+    "id": "p09",
+    "name": "winter landscape with skaters",
+    "artist": "Hendrick Avercamp",
+    "year": 1608,
+    "size": "30”×52”",
+    "price": 350000,
+    "image": "../p13.png"
+  },
+  {
+    "id": "p10",
+    "name": "a sunday on la grande jatte",
+    "artist": "Georges Seurat",
+    "year": 1884,
+    "size": "81”×121”",
+    "price": 60,
+    "image": "../p14.png"
+  },
+  {
+    "id": "p11",
+    "name": "au bord du ruisseau",
+    "artist": "William-Adolphe Bouguereau",
+    "year": 1888,
+    "size": "47”×56”",
+    "price": 2250000,
+    "image": "../p15.png"
+  },
+  {
+    "id": "p12",
+    "name": "stacks of wheat (end of summer)",
+    "artist": "Claude Monet",
+    "year": 1891,
+    "size": "46”×28”",
+    "price": 199,
+    "image": "../p16.jpg"
+  }
+]

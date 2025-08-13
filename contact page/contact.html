@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>life imitates art — contact</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!--NAVBAR-->
+  <header class="topbar">
+    <nav class="nav container">
+      <a href="../index.html">home</a>
+      <a href="../Products Page/products.html">art</a>
+      <a class="active" href="./contact.html">contact</a>
+    </nav>
+  </header>
+
+  <!--PAGE TITLE-->
+  <section class="page-title container">
+    <h1>contact us.</h1>
+  </section>
+
+  <!--CONTACT FORM-->
+  <main class="container">
+    <form id="contact-form" novalidate>
+      <!-- name -->
+      <div class="field">
+        <label for="name">name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required />
+        <p class="error" id="name-error" aria-live="polite"></p>
+      </div>
+
+      <!-- email -->
+      <div class="field">
+        <label for="email">email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+        <p class="error" id="email-error" aria-live="polite"></p>
+      </div>
+
+      <!-- comments -->
+      <div class="field">
+        <label for="message">comments</label>
+        <textarea id="message" name="message" rows="8" required></textarea>
+        <p class="error" id="message-error" aria-live="polite"></p>
+      </div>
+
+      <!-- submit -->
+      <div class="actions">
+        <button type="submit" class="btn-primary">submit</button>
+        <p class="success" id="form-success" aria-live="polite"></p>
+      </div>
+    </form>
+  </main>
+
+  <!--FOOTER-->
+  <footer class="bottombar">
+    <p>Imran Abdoulahi@lifeimitatesart 2025</p>
+  </footer>
+
+  <script src="contact.js" defer></script>
+</body>
+</html>
+
